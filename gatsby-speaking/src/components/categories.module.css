@@ -1,0 +1,29 @@
+.categoryContainer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem;
+  margin-bottom: var(--margin-large);
+}
+
+.extraResources {
+  font-size: var(--subtitle-large);
+  text-align: center;
+}
+
+.proLink {
+  color: var(--base-color);
+  font-weight: 700;
+}
+
+.proLink:hover {
+  color: var(--comp-color);
+}
+
+@media (max-width: 550px) {
+  .categoryContainer {
+    gap: 2rem;
+  }
+}

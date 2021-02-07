@@ -1,0 +1,138 @@
+.wrapper {
+  width: 60%;
+  margin: 2rem auto;
+}
+
+.lessonHeader {
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: var(--title-large);
+  color: var(--base-color);
+  margin: var(--margin-small) 0;
+}
+
+.choicesWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.charWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.imgWrapper {
+  position: relative;
+  text-align: center;
+  padding: var(--padding-small);
+}
+
+.charImg {
+  padding: var(--padding-medium);
+  cursor: pointer;
+  filter: brightness(90%);
+}
+
+.charImg:hover {
+  filter: brightness(100%);
+}
+
+.charActive {
+  border: 4px solid var(--base-color);
+}
+
+.nameCentered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--base-color);
+  font-size: var(--subtitle-medium);
+  font-family: var(--content-font);
+  background: var(--off-white);
+  opacity: .85;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.wholeConvoButton {
+  margin: var(--margin-medium) 0;
+}
+
+.fullAudioTextBtn {
+  display: block;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  width: auto;
+  margin: 0 auto;
+  font-size: var(--subtitle-medium);
+  color: var(--base-color);
+  padding: 2rem;
+  text-align: center;
+  border: 2px solid var(--base-color);
+  border-radius: var(--border-radius);
+}
+
+.fullAudioActive {
+  background: var(--base-color);
+  color: var(--off-white);
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .nameCentered {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .fullAudioTextBtn {
+    width: 90%;
+    font-size: var(--subtitle-xs);
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: var(--title-medium);
+  }
+
+  .charWrapper {
+    gap: .5rem;
+  }
+  
+  .imgWrapper {
+    padding: var(--padding-xs);
+  }
+  
+  .charImg {
+    padding: 0;
+  }
+
+  .nameCentered {
+    font-size: var(--subtitle-small);
+    width: 80%;
+  }
+}

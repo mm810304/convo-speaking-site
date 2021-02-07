@@ -1,0 +1,32 @@
+.wrapper {
+  width: 50%;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.lessonListHeader {
+  color: var(--base-color);
+  text-align: center;
+  font-size: var(--title-large);
+}
+
+.listItem {
+  font-size: var(--subtitle-large);
+  margin-bottom: var(--margin-medium);
+}
+
+.listItem a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.listItem a:hover {
+  color: var(--comp-color);
+}
+
+@media (max-width: 950px) {
+  .wrapper {
+    width: 85%;
+  }
+}
+
